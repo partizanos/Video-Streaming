@@ -48,7 +48,7 @@
     <version>4.0-SNAPSHOT</version>
     <artifactId>echo</artifactId>
     <packaging>war</packaging>
-    <name>WebSocket Echo Sample Application</name>
+    <name>Video-Streaming</name>
 
     <dependencies>
         <dependency>

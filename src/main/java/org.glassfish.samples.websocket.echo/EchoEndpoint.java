@@ -1,5 +1,4 @@
 package org.glassfish.samples.websocket.echo;
-
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,18 +8,11 @@ import java.nio.ByteBuffer;
 import javax.websocket.OnMessage;
 import javax.websocket.server.ServerEndpoint;
 
-/**
- * Echo endpoint.
- *
- * @author Pavel Bucek (pavel.bucek at oracle.com)
- */
 @ServerEndpoint("/echo")
 public class EchoEndpoint {
-
     @OnMessage
     public ByteBuffer echo(String message) throws IOException {
         //return message;
-
         InputStream is=null;
         ByteBuffer returnVideo=null;
         try {
@@ -52,5 +44,4 @@ public class EchoEndpoint {
     return byteData;
       //  ByteBuffer myVideo= new ByteBuffer();
     }
-    
 }
